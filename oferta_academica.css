@@ -1,0 +1,107 @@
+.header-computadora{
+    display: none;
+}
+header{
+    background-color: var(--negro);
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-imagen{
+   width: 12rem;  
+}
+#logo-hamb{
+    color: var(--blanco);
+}
+.header-navegacion{
+    position: absolute;
+    top:65px;
+    left: 0;
+    padding: 2rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    width: 100%;
+    height: calc(100vh - 65px);
+    opacity: 0;
+    transform:translateX(-100vw) ;
+    transition: opacity .3s ease, transform .3s ease;
+}
+.header-navegacion.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+.header-navegacion ul li{
+   line-height: 1.5;
+   font-size: 1.8rem;
+   border-bottom: 1px solid #5555;
+   padding:1rem 0;
+}
+.navegacion-link a{
+    color: var(--gris);
+    font-weight: 600;
+}
+.btn-uneteUDC{
+    color:var(--blanco);
+    background-color: var(--acento);
+    padding: 1.5rem 3rem ;
+    display:block;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width:1024px){
+    .header{
+        display: none;
+
+    }
+    .header-computadora{
+        display: block;
+        
+    }
+
+    .contenedor-header-computadora{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor-imagen-computadora{
+        width: 14rem;
+    }
+    .navegacion-link-computadora{
+        display: flex;
+        gap: 2rem;
+       
+        
+    }
+    .header-navegacion-computadora{
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .navegacion-link-computadora a{
+        font-size: 1.6rem;
+        color: var(--blanco);
+    }
+    .btn-uneteUDC-computadora{
+        background-color: var(--acento);
+        color: var(--blanco);
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        
+    }
+    .btn-uneteUDC-computadora:hover{
+        background-color: var(--acento-hover);
+       
+    }
+
+
+}

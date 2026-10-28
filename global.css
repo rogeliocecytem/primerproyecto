@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --primario: #1c8e46;
+    --secundario:#027A35;
+    --acento:  #ea6c08;
+    --blanco: #fff;
+    --negro: #101010;
+    --gris: #555;
+    --acento-hover:#C75D06;
+    
+
+}
+img{
+    width: 100%;
+}
+ul{
+   list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 700;
+
+}
+.max-content{
+    max-width: 1200px;
+    margin-inline: auto;
+}
